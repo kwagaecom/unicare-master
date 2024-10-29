@@ -111,7 +111,8 @@ function collapseNavbar() {
 
     // Check if the navbar is open and then close it
     if (navbarCollapse.classList.contains("show")) {
-        navbarToggler.click();  // Programmatically toggle the navbar
+        navbarCollapse.classList.remove("show"); // Collapse the menu
+        navbarToggler.setAttribute('aria-expanded', 'false'); // Update aria attribute
     }
 }
 </script>
